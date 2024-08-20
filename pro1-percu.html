@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venta de Instrumentos Musicales</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/logocn.jpeg">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+            <img src="img/logocn.jpeg" alt="Logo de la Empresa">
+            </a>
+        </div>
+    </header>
+
+    <nav class="navegacion">
+        <ul>
+            <li><a class="navegacion__enlace navegacion__enlace--activo" href="index.html">Tienda</a></li>
+            <li><a class="navegacion__enlace" href="nosotros.html">Nosotros</a></li>
+            <li><a href="Contacto.html">Contacto</a></li>
+            <li><a href="percucion.html">Percución</a></li>
+        </ul>
+    </nav>
+
+    <section class="producto-detalle">
+        <div class="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/Gretsch-rojo.jpeg" alt="producto">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/Gretsch-gris.jpeg" alt="producto2">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/Gretschnegro.jpeg" alt="producto3">
+                </div>
+            </div>
+            <button class="prev" onclick="prevSlide()">&#10094;</button>
+            <button class="next" onclick="nextSlide()">&#10095;</button>
+        </div>    
+        
+        <div class="producto-info">
+            <h2>Gretsch</h2>
+            <p>Q5,500</p>
+            <p>El hardware de montaje de Catalina Maple incluye una placa de bombo redonda con "tapa de gasolina" y un sistema de montaje GTS de perfil ultrabajo. Todos los accesorios incluyen pernos y tornillos Gretsch T-Wing para que el baterista tenga una experiencia agradable. Los aros de bombo se mantienen como nuevos gracias a las garras de bombo fundidas a presión aisladas de goma.</p>
+            
+            <div class="opciones-producto">
+                <div class="opcion-cantidad">
+                    <label for="cantidad">Cantidad:</label>
+                    <input type="number" id="cantidad" name="cantidad" min="1" value="1">
+                </div>
+                <div class="opcion-color">
+                    <label for="color">Color:</label>
+                    <select id="color" name="color">
+                        <option value="rojo">Rojo</option>
+                        <option value="gris">Gris</option>
+                        <option value="negro">Negro</option>
+                    </select>
+                </div>
+            </div>
+
+            <button class="boton-comprar">Añadir al Carrito</button>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Venta de Instrumentos Musicales. Todos los derechos reservados.</p>       
+    </footer>
+    <script src="js/script.js"></script>   
+</body>
+</html>
